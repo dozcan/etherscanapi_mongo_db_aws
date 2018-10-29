@@ -1,4 +1,26 @@
 # Etherscanapi_mongo_db_aws
-for building api => sudo docker build -t api .
-for running api  => sudo docker run -d -e NODE_IP=52.88.148.255 -e NODE_PORT=27017 -p 6000:6000 api 
-#etherscanapi
+executing way
+1) git clone npm install and node index 
+2) or building api => sudo docker build -t api .
+   for running api  => sudo docker run -d -p 27017:27017 api
+
+postman swaggers....
+
+StoreInformationToDb
+request=>
+{
+      "ethereumAddress" : "....."
+}
+
+BalanceWithFilter
+request=>
+{
+      "ethereumAddress" : "....."
+}
+
+TransactionsWithFilter
+request=>
+{
+      "ethereumAddress" : ".....",
+      "toAddress": """"
+}
